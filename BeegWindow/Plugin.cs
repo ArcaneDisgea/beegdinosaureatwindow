@@ -10,8 +10,7 @@ public sealed class Plugin : IDalamudPlugin
 {
     private DalamudPluginInterface PluginInterface { get; init; }
 
-    public Plugin(
-        [RequiredVersion("1.0")] DalamudPluginInterface pluginInterface)
+    public Plugin(DalamudPluginInterface pluginInterface)
     {
         PluginInterface = pluginInterface;
 
