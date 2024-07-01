@@ -8,9 +8,9 @@ namespace BeegWindow;
 
 public sealed class Plugin : IDalamudPlugin
 {
-    private DalamudPluginInterface PluginInterface { get; init; }
+    private IDalamudPluginInterface PluginInterface { get; init; }
 
-    public Plugin(DalamudPluginInterface pluginInterface)
+    public Plugin(IDalamudPluginInterface pluginInterface)
     {
         PluginInterface = pluginInterface;
 
