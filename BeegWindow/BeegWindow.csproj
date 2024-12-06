@@ -11,6 +11,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Update="DalamudPackager" Version="2.1.13" />
+    <PackageReference Update="DalamudPackager" Version="11.0.0" />
   </ItemGroup>
 </Project>

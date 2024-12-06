@@ -4,7 +4,7 @@
     "Punchline": "That sure is a beeg window.",
     "Description": "Ensures that the game window is maximized when launching in windowed mode.",
     "ApplicableVersion": "any",
-    "DalamudApiLevel":  10,
+    "DalamudApiLevel":  11,
     "Tags": [
         "beeg",
         "window"
