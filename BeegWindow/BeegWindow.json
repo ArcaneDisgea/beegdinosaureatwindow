@@ -1,12 +1,12 @@
 {
     "Author": "ArcaneDisgea",
-    "Name": "Beeg Window",
-    "Punchline": "That sure is a beeg window.",
+    "Name": "Beeg Dinosaur Eat Window",
+    "Punchline": "That sure is a beeg dinosaur eat window.",
     "Description": "Ensures that the game window is maximized when launching in windowed mode.",
     "ApplicableVersion": "any",
     "DalamudApiLevel":  12,
     "Tags": [
-        "beeg",
+        "beeg dinosaur eat",
         "window"
     ]
 }
