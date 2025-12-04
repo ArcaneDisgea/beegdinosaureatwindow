@@ -1,30 +1,33 @@
+using BeegWindow.Utilities;
 using Dalamud.IoC;
+using Dalamud.Plugin.Services;
 using Dalamud.Plugin;
 using System.Diagnostics;
-using System.Runtime.InteropServices;
-using System;
 
 namespace BeegWindow;
 
 public sealed class Plugin : IDalamudPlugin
 {
     private IDalamudPluginInterface PluginInterface { get; init; }
+    [PluginService] internal static IPluginLog Log { get; private set; } = null!;
 
     public Plugin(IDalamudPluginInterface pluginInterface)
     {
         PluginInterface = pluginInterface;
 
         var GameWindow = Process.GetCurrentProcess().MainWindowHandle;
-        ShowWindow(GameWindow, SW_SHOWMAXIMIZED);
+        if (!Native.IsWindowMaximized(GameWindow))
+        {
+            Log.Info("Window not maximized; Maximizing!");
+            Native.Maximize(GameWindow);
+        } else
+        {
+            Log.Info("Window already maximized.");
+        }
     }
 
     public void Dispose()
     {
 
     }
-
-    private const int SW_SHOWMAXIMIZED = 3;
-
-    [DllImport("user32.dll")]
-    static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
 }
