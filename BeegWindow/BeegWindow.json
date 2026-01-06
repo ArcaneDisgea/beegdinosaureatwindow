@@ -4,7 +4,7 @@
     "Punchline": "That sure is a beeg dinosaur eat window.",
     "Description": "Ensures that the game window is maximized when launching in windowed mode.",
     "ApplicableVersion": "any",
-    "DalamudApiLevel":  13,
+    "DalamudApiLevel":  14,
     "Tags": [
         "beeg dinosaur eat",
         "window"
