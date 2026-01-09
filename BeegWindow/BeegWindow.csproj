@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Dalamud.NET.Sdk/14.0.1">
   <PropertyGroup>
-    <Version>0.0.0.6</Version>
-    <Description>Making the window beeg.</Description>
+    <Version>0.0.0.7</Version>
+    <Description>Ensures that the game window is maximized when launching in windowed mode.</Description>
     <PackageProjectUrl>https://github.com/arcanedisgea/beegdinosaureatwindow</PackageProjectUrl>
     <PackageLicenseExpression>AGPL-3.0-or-later</PackageLicenseExpression>
     <IsPackable>false</IsPackable>
